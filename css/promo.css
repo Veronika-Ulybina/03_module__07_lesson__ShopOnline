@@ -1,0 +1,1263 @@
+.promo {
+	padding: 45px 0 189px;
+}
+
+.promo-list {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 480px repeat(2, 245px) 550px;
+	gap: 60px;
+	grid-template-areas: 
+	"banner banner banner banner banner banner"
+	"book time pair-of-sneakers pair-of-sneakers present present"
+	"sneaker-red sneaker-red pair-of-sneakers pair-of-sneakers laptop laptop"
+	"decorations decorations decorations decorations dress promo-goods"
+}
+
+/* Banner */
+.banner {
+	grid-area: banner;
+	display: grid;
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .4) 100%), url("../img/promo/bg-laptop.jpg");
+	background-repeat: no-repeat;
+	background-size: 110%;
+	background-position: left bottom 51%;
+	border-radius: 20px;
+}
+
+.banner__text {
+	font-size: 70px;
+	line-height: 130%;
+	padding: 150px 0 0 112px;
+}
+
+.banner__timer {
+	place-self: end center;
+	margin-bottom: 37px;
+}
+
+.timer__title {
+	font-size: 16px;
+	line-height: 130%;
+	text-align: center;
+	margin-bottom: 7px;
+}
+
+.timer__row {
+	display: grid;
+	grid-template-columns: repeat(3, max-content);
+	column-gap: 26px;
+}
+
+.timer__number {
+	font-size: 60px;
+	line-height: 130%;
+	margin-right: 2px;
+}
+
+.timer__text {
+	font-size: 32px;
+	line-height: 130%;
+}
+
+/* Book */
+.promo-book {
+	grid-area: book;
+	background-image: linear-gradient(181deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, .2) 98.87%), url("../img/promo/book.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+}
+
+.promo-book__link {
+	display: grid;
+	align-items: end;
+	height: 100%;
+	border-radius: 20px;
+	padding: 0 18px 18px 20px;
+}
+
+.promo-book__text {
+	line-height: 130%;
+}
+
+.promo-book__dfn {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+}
+
+.promo-book__text-excerpt {
+	font-weight: 400;
+	line-height: 130%;
+}
+
+/* Time */
+.promo-time {
+	grid-area: time;
+	background-image: linear-gradient(180deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, .2) 99.83%), url("../img/promo/time.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+}
+
+.promo-time__link {
+	display: grid;
+	align-content: end;
+	row-gap: 19px;
+	height: 100%;
+	border-radius: 20px;
+	padding: 0 20px 20px 14px;
+}
+
+.promo-time__text {
+	line-height: 130%;
+}
+
+.promo-time__discount {
+	justify-self: end;
+}
+
+.discount {
+	display: inline-grid;
+	grid-template-columns: 88px;
+	grid-template-rows: 88px;
+	justify-items: center;
+	align-items: center;
+	line-height: 130%;
+	background-color: #ffbd13;
+	border-radius: 50%;
+}
+
+/* Sneaker-red */
+.promo-sneaker-red {
+	grid-area: sneaker-red;
+	position: relative;
+	background-image: linear-gradient(181deg, rgba(0, 0, 0, 0) 8.18%, rgba(0, 0, 0, .2) 99.15%), url("../img/promo/sneaker-red.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 161%;
+	background-position: center bottom 35%;
+	border-radius: 20px;
+}
+
+.promo-sneaker-red__link {
+	display: block;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.promo-sneaker-red__discount {
+	position: absolute;
+	top: 19px;
+	left: 19px;
+}
+
+/* Pair-of-sneakers */
+.promo-pair-of-sneakers {
+	grid-area: pair-of-sneakers;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, .16) 100%), url("../img/promo/pair-of-sneakers.jpg");
+	background-repeat: no-repeat;
+	background-size: 108% 144%;
+	background-position: left center;
+	border-radius: 20px;
+}
+
+.promo-pair-of-sneakers__link {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(178px, max-content);
+	align-content: end;
+	height: 100%;
+	border-radius: 20px;
+	padding: 0 20px 22px;
+}
+
+.promo-pair-of-sneakers__text {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 130%;
+	background-color: #38c0eb;
+	border-radius: 20px;
+	padding: 26px 24px 26px 23px;
+}
+
+.promo-pair-of-sneakers__text-excerpt {
+	display: block;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 130%;
+}
+
+/* Present */
+.promo-present {
+	grid-area: present;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, .2) 100%), url("../img/promo/present.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 160%;
+	background-position: center bottom 35%;
+	border-radius: 20px;
+}
+
+.promo-present__link {
+	display: grid;
+	grid-template-columns: fit-content(340px);
+	align-content: end;
+	height: 100%;
+	border-radius: 20px;
+	padding: 0 30px 34px 30px;
+}
+
+.promo-present__text {
+	font-size: 40px;
+	line-height: 130%;
+}
+
+/* Laptop */
+.promo-laptop {
+	grid-area: laptop;
+	position: relative;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, .2) 100%), url("../img/promo/laptop.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 160%;
+	background-position: center bottom 44%;
+	border-radius: 20px;
+}
+
+.promo-laptop__link {
+	display: block;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.promo-laptop__block {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
+	width: 100%;
+	border-radius: 0 0 20px 20px;
+	padding: 0 20px 20px 30px;
+}
+
+.promo-laptop__text {
+	font-size: 40px;
+	line-height: 130%;
+	padding-top: 13px;
+}
+
+/* Decorations */
+.promo-decorations {
+	grid-area: decorations;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, .16) 100%), url("../img/promo/decorations.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 167%;
+	background-position: center bottom 41%;
+	border-radius: 20px;
+}
+
+.promo-decorations__link {
+	display: grid;
+	grid-template-columns: minmax(auto, 643px);
+	grid-template-rows: 115px;
+	align-content: end;
+	height: 100%;
+	border-radius: 20px;
+	padding: 0 15px 50px 50px;
+}
+
+.promo-decorations__text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	line-height: 120%;
+	text-transform: uppercase;
+	background-color: #fff;
+	color: #f91155;
+	border-radius: 20px;
+}
+
+/* Dress */
+.promo-dress {
+	grid-area: dress;
+	position: relative;
+	background-image: linear-gradient(180deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, .2) 99.83%), url("../img/promo/dress.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+}
+
+.promo-dress__link {
+	display: block;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.promo-dress__discount {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+/* Promo-goods */
+.promo-goods {
+	grid-area: promo-goods;
+}
+
+.promo-goods-list {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	row-gap: 60px;
+	height: 100%;
+}
+
+.promo-chemicals {
+	background-image: linear-gradient(180deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, .2) 99.83%), url("../img/promo/household-chemicals.jpg");
+	background-repeat: no-repeat;
+	background-size: 140% 100%;
+	background-position: right 26% center;
+	border-radius: 20px;
+}
+
+.promo-chemicals__link {
+	display: grid;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.promo-chemicals__discount {
+	width: 88px;
+	height: 88px;
+	transform: translate(20px, 20px);
+}
+
+.promo-chemicals__text {
+	align-self: end;
+	line-height: 130%;
+	border-radius: 0 0 20px 20px;
+	padding: 0 10px 18px 20px;
+}
+
+.promo-toys {
+	position: relative;
+	background-image: linear-gradient(180deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, .2) 99.83%), url("../img/promo/toys.jpg");
+	background-repeat: no-repeat;
+	background-size: 193% 140%;
+	background-position: left bottom;
+	border-radius: 20px;
+	transform: scale(-1, 1);
+}
+
+.promo-toys__link {
+	display: block;
+	height: 100%;
+	border-radius: 20px;
+}
+
+@media (max-width: 1640px) {
+
+	.promo-list {
+		gap: 24px;
+	}
+
+	.promo-list__banner {
+		margin-bottom: -2px;
+	}
+
+	/* Banner */
+	.banner {
+		background-size: 130%;
+		background-position: center bottom 51%;
+	}
+
+	/* Sneaker-red */
+.promo-sneaker-red {
+	background-size: cover;
+	background-position: center;
+}
+
+	/* Pair-of-sneakers */
+	.promo-pair-of-sneakers {
+		background-size: cover;
+		background-position: left bottom;
+	}
+
+	/* Laptop */
+	.promo-laptop {
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* Decorations */
+	.promo-decorations {
+		background-size: cover;
+	}
+	
+	/* Promo-goods */
+	.promo-goods-list {
+		row-gap: 24px;
+	}
+
+	.promo-chemicals {
+		background-size: cover;
+		background-position: center;
+	}
+
+	.promo-toys {
+		background-size: cover;
+	}
+}
+
+@media (max-width: 1400px) {
+
+	.promo {
+		padding: 30px 0 106px;
+	}
+
+	.promo-list {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 480px repeat(4, 245px) 418px;
+		grid-template-areas: 
+		"banner banner banner banner"
+		"book time pair-of-sneakers pair-of-sneakers"
+		"sneaker-red sneaker-red pair-of-sneakers pair-of-sneakers"
+		"present present dress promo-goods"
+		"laptop laptop dress promo-goods"
+		"decorations decorations decorations decorations"
+	}
+
+	/* Sneaker-red */
+	.promo-sneaker-red {
+		background-position: center bottom 35%;
+	}
+
+	/* Pair-of-sneakers */
+	.promo-pair-of-sneakers {
+		background-position: left center;
+	}
+	
+	.promo-pair-of-sneakers__link {
+		grid-template-rows: minmax(146px, max-content);
+		padding: 0 22px 22px;
+	}
+	
+	.promo-pair-of-sneakers__text {
+		font-size: 30px;
+		padding: 29px 25px;
+	}
+	
+	.promo-pair-of-sneakers__text-excerpt {
+		font-size: 40px;
+	}
+
+	/* Decorations */
+	.promo-decorations__link {
+		grid-template-columns: minmax(auto, 513px);
+		grid-template-rows: 83px;
+		padding: 0 15px 39px 30px;
+	}
+	
+	.promo-decorations__text {
+		font-size: 30px;
+		border-radius: 16px;
+	}
+
+	/* Promo-goods */
+	.promo-goods-list {
+		grid-template-rows: repeat(2, 245px);
+	}
+}
+
+@media (max-width: 1024px) {
+
+	.promo-list {
+		grid-template-rows: 312px repeat(4, 217px) 418px;
+	}
+
+	/* Banner */
+	.banner {
+		background-size: cover;
+		background-position: center;
+		border-radius: 16px;
+	}
+	
+	.banner__text {
+		max-width: 307px;
+		font-size: 40px;
+		padding: 84px 0 0 80px;
+	}
+
+	.banner__timer {
+		margin-bottom: 33px;
+	}
+
+	.timer__title {
+		margin-bottom: 12px;
+	}
+	
+	.timer__row {
+		column-gap: 20px;
+	}
+	
+	.timer__number {
+		font-size: 40px;
+		margin-right: 0;
+	}
+	
+	.timer__text {
+		font-size: 20px;
+	}
+
+	/* Book */
+	.promo-book {
+		border-radius: 16px;
+	}
+
+	.promo-book__link {
+		border-radius: 16px;
+		padding: 0 18px 24px 9px;
+	}
+
+	.promo-book__text {
+		font-size: 24px;
+	}
+
+	.promo-book__dfn {
+		font-weight: 700;
+		line-height: 120%;
+		font-size: 30px;
+	}
+
+	.promo-book__text-excerpt {
+		font-size: 24px;
+	}
+
+	/* Time */
+	.promo-time {
+		border-radius: 16px;
+	}
+
+	.promo-time__link {
+		row-gap: 28px;
+		border-radius: 16px;
+		padding: 0 10px 10px 9px;
+	}
+
+	.promo-time__text {
+		font-size: 24px;
+	}
+
+	/* Sneaker-red */
+	.promo-sneaker-red {
+		background-size: 100% 161%;
+		border-radius: 16px;
+	}
+
+	.promo-sneaker-red__discount {
+		top: 10px;
+		left: 10px;
+	}
+
+	/* Pair-of-sneakers */
+	.promo-pair-of-sneakers {
+		background-size: 108% 144%;
+		border-radius: 16px;
+	}
+
+	.promo-pair-of-sneakers__link {
+		border-radius: 16px;
+		padding: 0 22px 20px;
+	}
+
+	.promo-pair-of-sneakers__text {
+		border-radius: 16px;
+		padding: 32px 25px 26px 25px;
+	}
+
+	/* Present */
+	.promo-present {
+		border-radius: 16px;
+	}
+
+	.promo-present__link {
+		border-radius: 16px;
+		padding: 0 20px 26px 20px;
+	}
+
+	.promo-present__text {
+		font-size: 30px;
+	}
+
+	/* Laptop */
+	.promo-laptop {
+		background-size: 100% 160%;
+		background-position: center bottom 44%;
+		border-radius: 16px;
+	}
+
+	.promo-laptop__link {
+		border-radius: 16px;
+	}
+
+	.promo-laptop__block {
+		border-radius: 0 0 16px 16px;
+		padding: 0 10px 10px 20px;
+	}
+
+	.promo-laptop__text {
+		font-size: 30px;
+		padding-top: 34px;
+	}
+
+	/* Decorations */
+	.promo-decorations {
+		border-radius: 16px;
+	}
+
+	.promo-decorations__link {
+		border-radius: 16px;
+	}
+
+	.promo-decorations__text {
+		padding-top: 9px;
+	}
+
+	/* Dress */
+	.promo-dress {
+		border-radius: 16px;
+	}
+
+	.promo-dress__link {
+		border-radius: 16px;
+	}
+
+	.promo-dress__discount {
+		bottom: 10px;
+		right: 10px;
+	}
+
+	/* Promo-goods */
+	.promo-goods-list {
+		grid-template-rows: repeat(2, 1fr);
+	}
+	
+	.promo-chemicals {
+		background-size: 140% 100%;
+		background-position: right 26% center;
+		border-radius: 16px;
+	}
+
+	.promo-chemicals__link {
+		border-radius: 16px;
+	}
+
+	.promo-chemicals__discount {
+		transform: translate(10px, 10px);
+	}
+
+	.promo-chemicals__text {
+		font-size: 20px;
+		border-radius: 0 0 16px 16px;
+		padding: 0 10px 12px 14px;
+	}
+
+	.promo-toys {
+		background-size: 206% 138%;
+		border-radius: 16px;
+	}
+
+	.promo-toys__link {
+		border-radius: 16px;
+	}
+}
+
+@media (max-width: 890px) {
+	
+	.promo {
+		padding: 25px 0 106px;
+	}
+
+	.promo-list {
+		grid-template-rows: 314px repeat(4, 180px) 337px;
+		gap: 20px;
+	}
+	
+	/* Banner */
+	.promo-list__banner {
+		margin-bottom: 20px;
+	}
+	
+	.banner__text {
+		max-width: unset;
+		padding: 67px 0 0 80px;
+	}
+
+	.banner__timer {
+		margin-bottom: 27px;
+	}
+
+	.timer__title {
+		margin-bottom: 11px;
+	}
+
+	/* Time */
+	.discount {
+		grid-template-columns: 50px;
+		grid-template-rows: 50px;
+		font-size: 16px;
+	}
+
+	/* Sneaker-red */
+	.promo-sneaker-red {
+		background-size: cover;
+	}
+
+	/* Pair-of-sneakers */
+	.promo-pair-of-sneakers {
+		background-size: cover;
+		background-position: left bottom;
+	}
+
+	.promo-pair-of-sneakers__text {
+		padding: 16px 28px;
+	}
+
+	/* Laptop */
+	.promo-laptop {
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* Decorations */
+	.promo-decorations__link {
+		grid-template-columns: minmax(auto, 347px);
+		grid-template-rows: 68px;
+		border-radius: 16px;
+		padding: 0 15px 26px 26px;
+	}
+
+	.promo-decorations__text {
+		font-size: 20px;
+	}
+
+	/* Promo-goods */
+	.promo-chemicals__discount {
+		width: 50px;
+		height: 50px;
+	}
+
+	.promo-toys {
+		background-size: cover;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.promo-list {
+		grid-template-columns: repeat(2, minmax(120px, 140px)) minmax(120px, 220px) minmax(120px, 140px);
+		grid-template-rows: 300px repeat(4, 140px) 337px;
+		grid-template-areas: 
+		"banner banner banner banner"
+		"book time pair-of-sneakers pair-of-sneakers"
+		"sneaker-red sneaker-red pair-of-sneakers pair-of-sneakers"
+		"present present . ."
+		'laptop laptop dress promo-goods'
+		"decorations decorations decorations decorations"
+	}
+
+	/* Banner */
+	.banner__text {
+		font-size: 30px;
+	}
+
+	.timer__title {
+		font-size: 12px;
+	}
+
+	.timer__row {
+		column-gap: 7px;
+	}
+
+	.timer__number {
+		font-size: 30px;
+		margin-right: -1px;
+	}
+
+	.timer__text {
+		font-size: 16px;
+	}
+
+	/* Book */
+	.promo-book {
+		border-radius: 12px;
+	}
+
+	.promo-book__link {
+		border-radius: 12px;
+		padding: 0 18px 17px 10px;
+	}
+
+	.promo-book__text {
+		max-width: 94px;
+		font-size: 20px;
+		line-height: 110%;
+	}
+
+	.promo-book__dfn {
+		font-size: 26px;
+		line-height: 110%;
+	}
+
+	.promo-book__text-excerpt {
+		font-size: 20px;
+		line-height: 110%;
+	}
+
+	/* Time */
+	.promo-time {
+		border-radius: 12px;
+	}
+
+	.promo-time__link {
+		row-gap: 42px;
+		border-radius: 12px;
+		padding: 0 10px 10px 5px;
+	}
+	
+	.promo-time__text {
+		font-size: 16px;
+	}
+
+	/* Sneaker-red */
+	.promo-sneaker-red {
+		background-size: 100% 161%;
+		border-radius: 12px;
+	}
+
+	/* Pair-of-sneakers */
+	.promo-pair-of-sneakers {
+		height: 380px;
+		background-position: left center;
+		border-radius: 12px;
+	}
+
+	.promo-pair-of-sneakers__link {
+		grid-template-rows: minmax(61px, max-content);
+		border-radius: 12px;
+		padding: 0 10px 10px;
+	}
+
+	.promo-pair-of-sneakers__text {
+		font-size: 16px;
+		line-height: 110%;
+		border-radius: 12px;
+		padding: 19px 28px 11px 28px;
+	}
+
+	.promo-pair-of-sneakers__text-excerpt {
+		display: inline-block;
+		font-size: 26px;
+		line-height: 110%;
+	}
+
+	/* Present */
+	.promo-present {
+		border-radius: 12px;
+	}
+
+	.promo-present__link {
+		grid-template-columns: fit-content(136px);
+		border-radius: 12px;
+		padding: 0 20px 18px 20px;
+	}
+
+	.promo-present__text {
+		font-size: 16px;
+		line-height: 120%;
+	}
+
+	/* Laptop */
+	.promo-laptop {
+		border-radius: 12px;
+	}
+
+	.promo-laptop__link {
+		border-radius: 12px;
+	}
+
+	.promo-laptop__block {
+		border-radius: 0 0 12px 12px;
+	}
+
+	.promo-laptop__text {
+		font-size: 16px;
+		line-height: 120%;
+		padding-top: 16px;
+	}
+
+	/* Decorations */
+	.promo-decorations {
+		border-radius: 12px;
+		background-position: center bottom 29%;
+	}
+
+	.promo-decorations__link {
+		border-radius: 12px;
+	}
+
+	.promo-decorations__text {
+		border-radius: 12px;
+		padding-top: 4px;
+	}
+
+	/* Dress */
+	.promo-dress {
+		align-self: end;
+		height: 220px;
+		background-position: center top;
+		border-radius: 12px;
+	}
+
+	.promo-dress__link {
+		border-radius: 12px;
+	}
+
+	/* Promo-goods */
+	.promo-goods {
+		align-self: end;
+	}
+
+	.promo-goods-list {
+		grid-template-rows: 140px 60px;
+		row-gap: 20px;
+	}
+
+	.promo-chemicals {
+		background-size: cover;
+		background-position: center;
+		border-radius: 12px;
+	}
+
+	.promo-chemicals__link {
+		border-radius: 12px;
+	}
+
+	.promo-chemicals__text {
+		font-size: 16px;
+		line-height: 120%;
+		border-radius: 0 0 12px 12px;
+	}
+}
+
+@media (max-width: 628px) {
+
+	.promo {
+		padding: 21px 0 106px;
+	}
+
+	.promo-list {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 280px repeat(2, 230px) 380px repeat(2, 230px) 380px 337px;
+		grid-template-areas: 
+		"banner banner"
+		"book time"
+		"sneaker-red sneaker-red"
+		"pair-of-sneakers pair-of-sneakers"
+		"present present"
+		"laptop laptop"
+		"dress promo-goods"
+		"decorations decorations"
+	}
+
+	/* Banner */
+	.promo-list__banner {
+		margin-bottom: 0;
+	}
+
+	.banner__text {
+		justify-self: center;
+		padding: 50px 0 0;
+	}
+
+	/* Book */
+	.promo-book__link {
+		padding: 0 18px 10px 10px;
+	}
+
+	/* Time */
+	.promo-time__link {
+		row-gap: unset;
+		align-content: space-between;
+		padding: 28px 5px 5px 10px;
+	}
+
+	/* Sneaker-red */
+	.promo-sneaker-red {
+		background-size: cover;
+	}
+
+	.promo-sneaker-red__discount {
+		top: 5px;
+		left: 5px;
+	}
+
+	/* Pair-of-sneakers */
+	.promo-pair-of-sneakers {
+		height: unset;
+	}
+
+	/* Present */
+	.promo-present__link {
+		grid-template-columns: unset;
+		padding: 0 10px 14px 10px;
+	}
+
+	/* Laptop */
+	.promo-laptop__block {
+		padding: 0 5px 5px 10px;
+	}
+
+	/* Decorations */
+	.promo-decorations__link {
+		grid-template-columns: minmax(auto, 1fr);
+		grid-template-rows: 48px;
+		padding: 0 15px 10px 15px;
+	}
+
+	/* Dress */
+	.promo-dress {
+		align-self: unset;
+		height: unset;
+	}
+
+	/* Promo-goods */
+	.promo-goods-list {
+		grid-template-rows: repeat(2, 180px);
+	}
+
+	.promo-chemicals__discount {
+		transform: translate(5px, 5px);
+	}
+
+	.promo-chemicals__text {
+		padding: 0 10px 8px 9px;
+	}
+}
+
+@media (max-width: 460px) {
+
+	.promo-list {
+		grid-template-rows: 340px 130px 118px 280px repeat(2, 118px) 280px 123px;
+	}
+
+	/* Banner */
+	.banner {
+		border-radius: 8px;
+	}
+
+	.banner__text {
+		font-size: 22px;
+		padding: 52px 0 0;
+	}
+
+	.banner__timer {
+		margin-bottom: 29px;
+	}
+
+	.timer__title {
+		font-size: 8px;
+		margin-bottom: -2px;
+	}
+
+	.timer__row {
+		column-gap: 6px;
+	}
+
+	.timer__number {
+		font-size: 20px;
+		margin-right: -2px;
+	}
+
+	.timer__text {
+		font-size: 12px;
+	}
+
+	/* Book */
+	.promo-book {
+		border-radius: 8px;
+	}
+
+	.promo-book__link {
+		border-radius: 8px;
+		padding: 0 18px 9px 10px;
+	}
+
+	.promo-book__text {
+		max-width: 65px;
+		font-size: 12px;
+	}
+
+	.promo-book__dfn {
+		font-size: 16px;
+		line-height: 100%;
+	}
+
+	.promo-book__text-excerpt {
+		font-size: 12px;
+	}
+
+	/* Time */
+	.promo-time {
+		border-radius: 8px;
+	}
+
+	.promo-time__link {
+		border-radius: 8px;
+		padding: 30px 5px 5px 10px;
+	}
+
+	.promo-time__text {
+		font-size: 12px;
+	}
+
+	/* Sneaker-red */
+	.promo-sneaker-red {
+		background-size: 100% 190%;
+		border-radius: 8px;
+	}
+
+	/* Pair-of-sneakers */
+	.promo-pair-of-sneakers {
+		border-radius: 8px;
+	}
+
+	.promo-pair-of-sneakers__link {
+		grid-template-rows: minmax(36px, max-content);
+		border-radius: 8px;
+	}
+
+	.promo-pair-of-sneakers__text {
+		font-size: 12px;
+		border-radius: 8px;
+		padding: 11px 25px 8px 25px;
+	}
+
+	.promo-pair-of-sneakers__text-excerpt {
+		font-size: 16px;
+	}
+
+	/* Present */
+	.promo-present {
+		border-radius: 8px;
+	}
+
+	.promo-present__link {
+		border-radius: 8px;
+	}
+
+	.promo-present__text {
+		font-size: 12px;
+	}
+
+	/* Laptop */
+	.promo-laptop {
+		background-size: 100% 190%;
+		background-position: center;
+		border-radius: 8px;
+	}
+
+	.promo-laptop__link {
+		border-radius: 8px;
+	}
+
+	.promo-laptop__block {
+		border-radius: 0 0 8px 8px;
+	}
+
+	.promo-laptop__text {
+		font-size: 12px;
+	}
+
+	/* Decorations */
+	.promo-decorations {
+		background-position: center bottom 42%;
+		border-radius: 8px;
+	}
+
+	.promo-decorations__link {
+		grid-template-rows: 30px;
+		border-radius: 8px;
+	}
+
+	.promo-decorations__text {
+		font-size: 12px;
+		border-radius: 8px;
+		padding-top: 2px;
+	}
+
+	/* Dress */
+	.promo-dress {
+		border-radius: 8px;
+	}
+
+	.promo-dress__link {
+		border-radius: 8px;
+	}
+
+	/* Promo-goods */
+	.promo-goods-list {
+		grid-template-rows: repeat(2, 130px);
+	}
+
+	.promo-chemicals {
+		border-radius: 8px;
+	}
+
+	.promo-chemicals__link {
+		border-radius: 8px;
+	}
+
+	.promo-chemicals__text {
+		font-size: 12px;
+	}
+
+	.promo-toys {
+		border-radius: 8px;
+	}
+
+	.promo-toys__link {
+		border-radius: 8px;
+	}
+}
+
+@media (max-width: 340px) {
+
+	/* Sneaker-red */
+	.promo-sneaker-red {
+		background-size: 100% 161%;
+		background-position: center bottom 36%;
+	}
+
+	/* Laptop */
+	.promo-laptop {
+		background-size: 100% 160%;
+		background-position: center bottom 44%;
+	}
+	
+	/* Decorations */
+	.promo-decorations {
+		background-size: 100% 151%;
+		background-position: center bottom 26%;
+	}
+
+	/* Promo-goods */
+	.promo-toys {
+		background-size: 186% 126%;
+	}
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preload" href="fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" href="css/style.css">
+	<title>ShopOnline</title>
+</head>
+
+<body class="page">
+	<header class="header">
+		<div class="header__container container">
+			<a class="header__logo header-logo" href="#">Shop<span class="logo__text-excerpt">Online</span></a>
+
+			<nav class="navigation-menu">
+				<button class="navigation-menu__btn" type="button">
+					<span class="navigation-menu__btn-burger"></span>
+					<p class="navigation-menu__btn-text">Меню</p>
+				</button>
+			</nav>
+
+			<form class="form">
+				<label class="visually-hidden" for="search">Поиск товаров</label>
+				<input class="form__search" type="search" name="search" id="search" placeholder="Я ищу...">
+				<button class="form__btn" type="submit" formaction="#" formmethod="post" formtarget="_blank" aria-label="Кнопка поиска товаров">
+					<img class="form__search-icon" src="img/header/search.svg" alt="Иконка поиска">
+				</button>
+			</form>
+
+			<ul class="header__widgets-list widgets-list">
+				<li class="widgets-list__item">
+					<a class="widgets-list__link" href="#" target="_blank">
+						<img class="widgets-icon" src="img/header/person.svg" alt="Профиль">
+						<p class="widgets-list__text">Профиль</p>
+					</a>
+				</li>
+
+				<li class="widgets-list__item">
+					<a class="widgets-list__link" href="#" target="_blank">
+						<div class="widgets-list__basket widget-basket">
+							<img class="widgets-icon" src="img/header/shopping-cart.svg" alt="Корзина">
+							<span class="widget-basket__output">2</span>
+						</div>
+
+						<p class="widgets-list__text">Корзина</p>
+					</a>
+				</li>
+
+				<li class="widgets-list__item">
+					<a class="widgets-list__link" href="#" target="_blank">
+						<img class="widgets-icon" src="img/header/favorite.svg" alt="Избранное">
+						<p class="widgets-list__text">Избранное</p>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="promo">
+			<div class="container">
+				<h2 class="visually-hidden">Рекламный блок товаров для вас и вашего дома</h2>
+
+				<ul class="promo-list">
+					<li class="promo-list__banner banner">
+            <p class="banner__text">-50% на все ноутбуки</p>
+
+            <div class="banner__timer timer">
+              <p class="timer__title">До конца акции:</p>
+
+              <div class="timer__row">
+                <p class="timer__column timer__column_days">
+									<span class="timer__number">00</span>
+									<span class="timer__text">дня</span>
+								</p>
+
+                <p class="timer__column timer__column_hours">
+									<span class="timer__number">00</span>
+									<span class="timer__text">часов</span>
+								</p>
+
+                <p class="timer__column timer__column_minutes">
+									<span class="timer__number">00</span>
+									<span class="timer__text">минуты</span>
+								</p>
+              </div>
+            </div>
+          </li>
+
+					<li class="promo-book">
+						<a class="promo-book__link" href="#" target="_blank">
+							<p class="promo-book__text"><b class="promo-book__dfn">Книга</b> – <span class="promo-book__text-excerpt">лучший подарок</span></p>
+						</a>
+					</li>
+
+					<li class="promo-time">
+						<a class="promo-time__link" href="#" target="_blank">
+							<strong class="promo-time__text">Время скидок!</strong>
+							<strong class="promo-time__discount discount">-25%</strong>
+						</a>
+					</li>
+
+					<li class="promo-sneaker-red">
+						<a class="promo-sneaker-red__link" href="#" target="_blank" arial-label="Кроссовки">
+							<strong class="promo-sneaker-red__discount discount">-40%</strong>
+						</a>
+					</li>
+
+					<li class="promo-pair-of-sneakers">
+						<a class="promo-pair-of-sneakers__link" href="#" target="_blank">
+							<p class="promo-pair-of-sneakers__text">Вторая пара кроссовок <em class="promo-pair-of-sneakers__text-excerpt">в подарок!</em></p>
+						</a>
+					</li>
+
+					<li class="promo-present">
+						<a class="promo-present__link" href="#" target="_blank">
+							<p class="promo-present__text">Идеи новогодних подарков</p>
+						</a>
+					</li>
+
+					<li class="promo-laptop">
+						<a class="promo-laptop__link" href="#" target="_blank" aria-label="Ноутбуки">
+
+							<div class="promo-laptop__block">
+								<strong class="promo-laptop__text">Выгодно в декабре!</strong>
+								<strong class="discount">-15%</strong>
+							</div>
+						</a>
+					</li>
+
+					<li class="promo-decorations">
+						<a class="promo-decorations__link" href="#" target="_blank">
+							<p class="promo-decorations__text">Новогодние украшения</p>
+						</a>
+					</li>
+
+					<li class="promo-dress">
+						<a class="promo-dress__link" href="#" target="_blank" arial-label="Летние платья">
+							<strong class="promo-dress__discount discount">-55%</strong>
+						</a>
+					</li>
+
+					<li class="promo-goods">
+
+						<ul class="promo-goods-list">
+							<li class="promo-goods-list__item promo-chemicals">
+								<a class="promo-chemicals__link" href="#" target="_blank">
+									<strong class="promo-chemicals__discount discount">-25%</strong>
+									<p class="promo-chemicals__text">На бытовую химию</p>
+								</a>
+							</li>
+
+							<li class="promo-goods-list__item promo-toys">
+								<a class="promo-toys__link" href="#" target="_blank" aria-label="Новогодние ёлочные игрушки"></a>
+							</li>
+						</ul>
+						
+					</li>
+				</ul>
+
+			</div>
+		</section>
+	</main>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
